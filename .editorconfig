@@ -1,0 +1,31 @@
+# top-most EditorConfig file
+root = true
+
+[*]
+end_of_line = lf
+charset = utf-8
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# GIT
+[COMMIT_EDITMSG]
+indent_size              = 4
+indent_style             = space
+max_line_length          = 80
+
+[*.patch]
+trim_trailing_whitespace = false
+
+[{*.conf}]
+indent_size = 2
+max_line_length = 100
+
+# Bash Files
+[*.sh]
+end_of_line = lf
+
+# Tab indentation (no size specified)
+[Makefile]
+indent_style = tab

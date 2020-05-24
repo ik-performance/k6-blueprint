@@ -1,0 +1,27 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v3.1.0
+  hooks:
+  - id: check-added-large-files
+    args: ['--maxkb=500']
+  - id: check-executables-have-shebangs
+  - id: pretty-format-json
+    args: ['--autofix', '--no-sort-keys', '--indent=2']
+  - id: check-byte-order-marker
+  - id: check-case-conflict
+  - id: check-executables-have-shebangs
+  - id: check-merge-conflict
+  - id: check-symlinks
+  - id: detect-private-key
+  - id: check-merge-conflict
+  - id: detect-aws-credentials
+    args: ['--allow-missing-credentials']
+- repo: git://github.com/smian/pre-commit-makefile
+  rev: 261f8fb4b31dfdc05d1a1d7fbde1f1462ecde66d
+  hooks:
+  - id: makefile-doc
+- repo: https://github.com/gruntwork-io/pre-commit
+  rev: v0.1.5 # Get the latest from: https://github.com/gruntwork-io/pre-commit/releases
+  hooks:
+  - id: shellcheck
+  
