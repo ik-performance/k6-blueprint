@@ -1,20 +1,23 @@
-# performance-blueprint-project
+# k6-blueprint
 
 Blueprint performance project
 
-[![](https://img.shields.io/github/license/ik-performance/performance-blueprint-project)](https://github.com/ik-performance/performance-blueprint-project)
-![](https://img.shields.io/github/v/tag/ik-performance/performance-blueprint-project)
-![](https://img.shields.io/issues/github/ik-performance/performance-blueprint-project)
-![](https://img.shields.io/github/issues/ik-performance/performance-blueprint-project)
-![](https://img.shields.io/github/issues-closed/ik-performance/performance-blueprint-project)
-[![](https://img.shields.io/github/languages/code-size/ik-performance/performance-blueprint-project)](https://github.com/ik-performance/performance-blueprint-project)
-[![](https://img.shields.io/github/repo-size/ik-performance/performance-blueprint-project)](https://github.com/ik-performance/performance-blueprint-project)
-![](https://img.shields.io/github/languages/top/ik-performance/performance-blueprint-project?color=green&logo=terraform&logoColor=blue)
-![](https://img.shields.io/github/commit-activity/m/ik-performance/performance-blueprint-project)
-![](https://img.shields.io/github/contributors/ik-performance/performance-blueprint-project)
-![](https://img.shields.io/github/last-commit/ik-performance/performance-blueprint-project)
+- [Documenation](https://k6.io/docs/using-k6/)
+- [Github](https://github.com/loadimpact/k6)
 
-- [performance-blueprint-project](#performance-blueprint-project)
+[![](https://img.shields.io/github/license/ik-performance/k6-blueprint)](https://github.com/ik-performance/k6-blueprint)
+![](https://img.shields.io/github/v/tag/ik-performance/k6-blueprint)
+![](https://img.shields.io/issues/github/ik-performance/k6-blueprint)
+![](https://img.shields.io/github/issues/ik-performance/k6-blueprint)
+![](https://img.shields.io/github/issues-closed/ik-performance/k6-blueprint)
+[![](https://img.shields.io/github/languages/code-size/ik-performance/k6-blueprint)](https://github.com/ik-performance/k6-blueprint)
+[![](https://img.shields.io/github/repo-size/ik-performance/k6-blueprint)](https://github.com/ik-performance/k6-blueprint)
+![](https://img.shields.io/github/languages/top/ik-performance/k6-blueprint?color=green&logo=terraform&logoColor=blue)
+![](https://img.shields.io/github/commit-activity/m/ik-performance/k6-blueprint)
+![](https://img.shields.io/github/contributors/ik-performance/k6-blueprint)
+![](https://img.shields.io/github/last-commit/ik-performance/k6-blueprint)
+
+- [k6-blueprint](#k6-blueprint)
   * [Running locally](#running-locally)
     + [DSL](#dsl)
     + [Scenario's](#scenario-s)
@@ -22,6 +25,7 @@ Blueprint performance project
   * [Mocking](#mocking)
     + [Data](#data)
     + [API](#api)
+    + [Alternative Examples](#alternative-examples)
   * [Targets](#targets)
   * [:memo: Guidelines](#-memo--guidelines)
   * [License](#license)
@@ -54,15 +58,20 @@ For all awailable simulations `make choose/simulation`
 - https://jsonplaceholder.typicode.com
 - https://test-api.k6.io/
 
+### Alternative Examples
+
+- https://github.com/loadimpact/k6/tree/master/samples
+- https://github.com/ik-performance/postman-to-k6/tree/master/example
+
 ## Targets
 
 <!-- START makefile-doc -->
 ```
-$ make help 
+$ make help
 change                         Update changelog
 choose/simulation              Show all simulations
 init                           Commit hooks setup
-validate                       Validate with pre-commit hooks 
+validate                       Validate with pre-commit hooks
 ```
 <!-- END makefile-doc -->
 
